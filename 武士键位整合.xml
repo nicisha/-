@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedFolder FFXIVJobFilterEnabled="True" FFXIVJobFilter="8589934592" Id="922d44ee-e64b-48dc-8aba-18dee51db252" Name="武士键位整合" Enabled="true">
+    <Folders>
+      <Folder Id="f8a9b9bc-e0a8-4185-95ce-5eed465e735b" Name="意气+斩浪" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="获得奥义斩浪预备" Id="2cb48aa5-fc6b-407a-9a2b-7fc56e993014" RegularExpression="1A:B8F:奥义斩浪预备:[0-9]{2}.[0-9]{2}:[0-9A-Fa-f]{8}:(?&lt;name&gt;[\w\u4E00-\u9FA5\uF900-\uFA2D ]+)">
+            <Actions>
+              <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2019/command" JsonPayloadExpression="/hotbar set 奥义斩浪 ${var:意气冲天行} ${var:意气冲天列}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:2019/command" JsonPayloadExpression="/hotbar set 意气冲天 ${var:意气冲天行} ${var:意气冲天列}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="60000">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="发动奥义斩浪" Id="020cf80e-ec24-440f-a395-cc8814cc4eaa" RegularExpression="15:[0-9A-Fa-f]{8}:(?&lt;name&gt;[\w\u4E00-\u9FA5\uF900-\uFA2D ]+):64B5:奥义斩浪">
+            <Actions>
+              <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2019/command" JsonPayloadExpression="/hotbar set 意气冲天 ${var:意气冲天行} ${var:意气冲天列}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson" ExecutionDelayExpression="30000">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="发动回返斩浪" Id="2a093d35-4ffa-4bb0-9ccd-22e332022654" RegularExpression="15:[0-9A-Fa-f]{8}:(?&lt;name&gt;[\w\u4E00-\u9FA5\uF900-\uFA2D ]+):64B6:回返斩浪">
+            <Actions>
+              <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2019/command" JsonPayloadExpression="/hotbar set 意气冲天 ${var:意气冲天行} ${var:意气冲天列}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+        </Triggers>
+      </Folder>
+    </Folders>
+    <Triggers>
+      <Trigger Enabled="true" Name="设置" Id="4b1983aa-a9e9-497c-81ba-f1fcc023789d" RegularExpression="\[">
+        <Actions>
+          <Action OrderNumber="1" VariableOp="SetString" VariableName="意气冲天行" VariableExpression="5" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" VariableOp="SetString" VariableName="意气冲天列" VariableExpression="6" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>

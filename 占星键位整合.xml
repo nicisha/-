@@ -8,7 +8,9 @@
           <Trigger Enabled="true" Name="抽小奥秘卡" Id="6c373bc6-cc65-475e-b225-3be6e5439bdf" RegularExpression="15:[0-9A-Fa-f]{8}:(?&lt;name&gt;[\w\u4E00-\u9FA5\uF900-\uFA2D ]+):1D13:小奥秘卡">
             <Actions>
               <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2019/command" JsonPayloadExpression="/hotbar set 出王冠卡 ${var:小奥秘卡行} ${var:小奥秘卡列}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
-                <Condition Enabled="false" Grouping="Or" />
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -16,7 +18,9 @@
           <Trigger Enabled="true" Name="出贵妇卡" Id="2dca0d01-8cd9-4dbe-8564-00148f110804" RegularExpression="15:[0-9A-Fa-f]{8}:(?&lt;name&gt;[\w\u4E00-\u9FA5\uF900-\uFA2D ]+):[0-9A-Fa-f]{4}:王冠之贵妇">
             <Actions>
               <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2019/command" JsonPayloadExpression="/hotbar set 小奥秘卡 ${var:小奥秘卡行} ${var:小奥秘卡列}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
-                <Condition Enabled="false" Grouping="Or" />
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -24,7 +28,9 @@
           <Trigger Enabled="true" Name="出领主卡" Id="35ad61c4-2a10-44c1-8f6b-3663ccca3e01" RegularExpression="15:[0-9A-Fa-f]{8}:(?&lt;name&gt;[\w\u4E00-\u9FA5\uF900-\uFA2D ]+):[0-9A-Fa-f]{4}:王冠之领主">
             <Actions>
               <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2019/command" JsonPayloadExpression="/hotbar set 小奥秘卡 ${var:小奥秘卡行} ${var:小奥秘卡列}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
-                <Condition Enabled="false" Grouping="Or" />
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -37,74 +43,82 @@
           <Trigger Enabled="true" Name="重抽" Id="fbc3008a-0e70-4c8f-9576-48807d0f3607" RegularExpression="15:[0-9A-Fa-f]{8}:(?&lt;name&gt;[\w\u4E00-\u9FA5\uF900-\uFA2D ]+):E09:重抽">
             <Actions>
               <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2019/command" JsonPayloadExpression="/hotbar set 抽卡 ${var:抽卡行} ${var:抽卡列}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
-                <Condition Enabled="false" Grouping="Or" />
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="抽卡" Id="493fc60a-e536-4dc7-a0d5-01e0da627c1a" RegularExpression="15:[0-9A-Fa-f]{8}:(?&lt;name&gt;[\w\u4E00-\u9FA5\uF900-\uFA2D ]+):E06:抽卡">
             <Actions>
               <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2019/command" JsonPayloadExpression="/hotbar set 重抽 ${var:抽卡行} ${var:抽卡列}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
-                <Condition Enabled="false" Grouping="Or" />
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="出卡（放浪神）" Id="4befa44a-33d8-4dda-95e1-9755d6196813" RegularExpression="15:[0-9A-Fa-f]{8}:(?&lt;name&gt;[\w\u4E00-\u9FA5\uF900-\uFA2D ]+):[0-9A-Fa-f]{4}:放浪神之箭">
             <Actions>
               <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2019/command" JsonPayloadExpression="/hotbar set 抽卡 ${var:抽卡行} ${var:抽卡列}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
-                <Condition Enabled="false" Grouping="Or" />
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="出卡（世界树）" Id="a7cb0698-e7d6-406a-828e-7b61b73c14ca" RegularExpression="15:[0-9A-Fa-f]{8}:(?&lt;name&gt;[\w\u4E00-\u9FA5\uF900-\uFA2D ]+):[0-9A-Fa-f]{4}:世界树之干">
             <Actions>
               <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2019/command" JsonPayloadExpression="/hotbar set 抽卡 ${var:抽卡行} ${var:抽卡列}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
-                <Condition Enabled="false" Grouping="Or" />
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="出卡（战争神）" Id="8439eca8-5697-4349-a302-a89ffb83b28c" RegularExpression="15:[0-9A-Fa-f]{8}:(?&lt;name&gt;[\w\u4E00-\u9FA5\uF900-\uFA2D ]+):[0-9A-Fa-f]{4}:战争神之枪">
             <Actions>
               <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2019/command" JsonPayloadExpression="/hotbar set 抽卡 ${var:抽卡行} ${var:抽卡列}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
-                <Condition Enabled="false" Grouping="Or" />
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="出卡（太阳神）" Id="51fb4996-8c6e-494d-bb38-cc60dae0d3af" RegularExpression="15:[0-9A-Fa-f]{8}:(?&lt;name&gt;[\w\u4E00-\u9FA5\uF900-\uFA2D ]+):[0-9A-Fa-f]{4}:太阳神之衡">
             <Actions>
               <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2019/command" JsonPayloadExpression="/hotbar set 抽卡 ${var:抽卡行} ${var:抽卡列}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
-                <Condition Enabled="false" Grouping="Or" />
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="出卡（河流神）" Id="4440643e-dd5e-464b-bf99-a4350d8eb316" RegularExpression="15:[0-9A-Fa-f]{8}:(?&lt;name&gt;[\w\u4E00-\u9FA5\uF900-\uFA2D ]+):[0-9A-Fa-f]{4}:河流神之瓶">
             <Actions>
               <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2019/command" JsonPayloadExpression="/hotbar set 抽卡 ${var:抽卡行} ${var:抽卡列}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
-                <Condition Enabled="false" Grouping="Or" />
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
           <Trigger Enabled="true" Name="出卡（建筑神）" Id="fd8cb15f-073a-46b5-8e6d-f4cbecd798fa" RegularExpression="15:[0-9A-Fa-f]{8}:(?&lt;name&gt;[\w\u4E00-\u9FA5\uF900-\uFA2D ]+):[0-9A-Fa-f]{4}:建筑神之塔">
             <Actions>
               <Action OrderNumber="1" JsonEndpointExpression="http://127.0.0.1:2019/command" JsonPayloadExpression="/hotbar set 抽卡 ${var:抽卡行} ${var:抽卡列}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="GenericJson">
-                <Condition Enabled="false" Grouping="Or" />
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${name}" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
@@ -120,7 +134,6 @@
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
-        <Conditions />
       </Trigger>
       <Trigger Enabled="true" Name="设置" Id="986bfafd-f33b-4a2e-ba01-acc942915ace" RegularExpression="\[">
         <Actions>
@@ -138,7 +151,6 @@
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
-        <Conditions />
       </Trigger>
     </Triggers>
   </ExportedFolder>
