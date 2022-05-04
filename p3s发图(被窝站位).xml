@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedFolder Id="3090d7a8-1461-4981-9b3f-2807b4d417c7" Name="p3s发图(被窝站位)" Enabled="true">
+    <Folders />
+    <Triggers>
+      <Trigger Enabled="true" Name="中间分摊" Id="41d20c7b-92e0-40f3-91c8-835b5e8e628e" RegularExpression="14:[0-9A-Fa-f]{8}:菲尼克司:66FC">
+        <Actions>
+          <Action OrderNumber="1" AuraImageMode="StretchImage" AuraName="中间分摊站位" AuraImage="${p3s图片路径}\中间分摊.jpg" AuraXIniExpression="${var:屏幕宽度}/2-250*${var:屏幕宽度}/3840" AuraYIniExpression="0" AuraWIniExpression="500*${var:屏幕宽度}/3840" AuraHIniExpression="500*${var:屏幕高度}/2160" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" AuraOp="DeactivateAura" AuraImageMode="StretchImage" AuraName="中间分摊站位" AuraImage="H:\Final Fantasy XIV\ACT国服整合\时间轴\timeline\自用万魔殿\p3s\中间分摊.jpg" AuraXIniExpression="1920-250" AuraYIniExpression="0" AuraWIniExpression="500" AuraHIniExpression="500" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura" ExecutionDelayExpression="20*1000">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="两侧分散" Id="1fcc8616-9947-46bc-ae5e-e4352bbe6308" RegularExpression="14:[0-9A-Fa-f]{8}:菲尼克司:66FB">
+        <Actions>
+          <Action OrderNumber="1" AuraImageMode="StretchImage" AuraName="两侧分散站位" AuraImage="${p3s图片路径}\两侧分散.png" AuraXIniExpression="${var:屏幕宽度}/2-250*${var:屏幕宽度}/3840" AuraYIniExpression="0" AuraWIniExpression="500*${var:屏幕宽度}/3840" AuraHIniExpression="500*${var:屏幕高度}/2160" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" AuraOp="DeactivateAura" AuraImageMode="StretchImage" AuraName="两侧分散站位" AuraImage="H:\Final Fantasy XIV\ACT国服整合\时间轴\timeline\自用万魔殿\p3s\两侧分散.png" AuraXIniExpression="1920-250" AuraYIniExpression="0" AuraWIniExpression="500" AuraHIniExpression="500" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura" ExecutionDelayExpression="20*1000">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="魔力炼成：炎暗劫火分摊" Id="06bd3ded-75d2-49e0-817e-96ae60e9702d" RegularExpression="15:[0-9A-Fa-f]{8}:菲尼克司:66CC">
+        <Actions>
+          <Action OrderNumber="1" AuraImageMode="StretchImage" AuraName="炎暗劫火分摊站位_九连环" AuraImage="${p3s图片路径}\炎暗劫火分摊站位_九连环.png" AuraXIniExpression="${var:屏幕宽度}/2-500*${var:屏幕宽度}/3840" AuraYIniExpression="0" AuraWIniExpression="500*${var:屏幕宽度}/3840" AuraHIniExpression="500*${var:屏幕高度}/2160" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" AuraImageMode="StretchImage" AuraName="炎暗劫火分摊站位_大圈" AuraImage="${p3s图片路径}\炎暗劫火分摊站位_大圈.png" AuraXIniExpression="${var:屏幕宽度}/2" AuraYIniExpression="0" AuraWIniExpression="500*${var:屏幕宽度}/3840" AuraHIniExpression="500*${var:屏幕高度}/2160" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" AuraOp="DeactivateAura" AuraImageMode="StretchImage" AuraName="炎暗劫火分摊站位_九连环" AuraImage="H:\Final Fantasy XIV\ACT国服整合\时间轴\timeline\自用万魔殿\p3s\炎暗劫火分摊站位_九连环.png" AuraXIniExpression="1920-500" AuraYIniExpression="0" AuraWIniExpression="500" AuraHIniExpression="500" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura" ExecutionDelayExpression="20*1000">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="4" AuraOp="DeactivateAura" AuraImageMode="StretchImage" AuraName="炎暗劫火分摊站位_大圈" AuraImage="H:\Final Fantasy XIV\ACT国服整合\时间轴\timeline\自用万魔殿\p3s\炎暗劫火分摊站位_大圈.png" AuraXIniExpression="1920" AuraYIniExpression="0" AuraWIniExpression="500" AuraHIniExpression="500" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="魔力炼成：暗黑劫火焚天分散" Id="db47be61-5d11-4fe2-999f-19707eb8a46d" RegularExpression="14:[0-9A-Fa-f]{8}:菲尼克司:66C4">
+        <Actions>
+          <Action OrderNumber="1" AuraImageMode="StretchImage" AuraName="暗黑劫火焚天分散站位_第一次" AuraImage="${p3s图片路径}\暗黑劫火焚天分散站位_第一次.png" AuraXIniExpression="${var:屏幕宽度}/2-500*${var:屏幕宽度}/3840" AuraYIniExpression="0" AuraWIniExpression="500*${var:屏幕宽度}/3840" AuraHIniExpression="500*${var:屏幕高度}/2160" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" AuraImageMode="StretchImage" AuraName="暗黑劫火焚天分散站位_第二次" AuraImage="${p3s图片路径}\暗黑劫火焚天分散站位_第二次.png" AuraXIniExpression="${var:屏幕宽度}/2" AuraYIniExpression="0" AuraWIniExpression="500*${var:屏幕宽度}/3840" AuraHIniExpression="500*${var:屏幕高度}/2160" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" AuraOp="DeactivateAura" AuraImageMode="StretchImage" AuraName="暗黑劫火焚天分散站位_第一次" AuraImage="H:\Final Fantasy XIV\ACT国服整合\时间轴\timeline\自用万魔殿\p3s\暗黑劫火焚天分散站位_第一次.png" AuraXIniExpression="1920-500" AuraYIniExpression="0" AuraWIniExpression="500" AuraHIniExpression="500" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura" ExecutionDelayExpression="20*1000">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="4" AuraOp="DeactivateAura" AuraImageMode="StretchImage" AuraName="暗黑劫火焚天分散站位_第二次" AuraImage="H:\Final Fantasy XIV\ACT国服整合\时间轴\timeline\自用万魔殿\p3s\暗黑劫火焚天分散站位_第二次.png" AuraXIniExpression="1920" AuraYIniExpression="0" AuraWIniExpression="500" AuraHIniExpression="500" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="魔力炼成：暗黑劫火焚天分摊" Id="61665fc6-b62f-442c-a56c-5eccca112c65" RegularExpression="14:[0-9A-Fa-f]{8}:菲尼克司:66C2">
+        <Actions>
+          <Action OrderNumber="1" AuraImageMode="StretchImage" AuraName="暗黑劫火焚天分摊站位_第一次" AuraImage="${p3s图片路径}\暗黑劫火焚天分摊站位_第一次.jpg" AuraXIniExpression="${var:屏幕宽度}/2-500*${var:屏幕宽度}/3840" AuraYIniExpression="0" AuraWIniExpression="500*${var:屏幕宽度}/3840" AuraHIniExpression="500*${var:屏幕高度}/2160" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" AuraImageMode="StretchImage" AuraName="暗黑劫火焚天分摊站位_第二次" AuraImage="${p3s图片路径}\暗黑劫火焚天分摊站位_第二次.png" AuraXIniExpression="${var:屏幕宽度}/2" AuraYIniExpression="0" AuraWIniExpression="500*${var:屏幕宽度}/3840" AuraHIniExpression="500*${var:屏幕高度}/2160" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" AuraOp="DeactivateAura" AuraImageMode="StretchImage" AuraName="暗黑劫火焚天分摊站位_第一次" AuraImage="H:\Final Fantasy XIV\ACT国服整合\时间轴\timeline\自用万魔殿\p3s\暗黑劫火焚天分摊站位_第一次.jpg" AuraXIniExpression="1920-500" AuraYIniExpression="0" AuraWIniExpression="500" AuraHIniExpression="500" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura" ExecutionDelayExpression="20*1000">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="4" AuraOp="DeactivateAura" AuraImageMode="StretchImage" AuraName="暗黑劫火焚天分摊站位_第二次" AuraImage="H:\Final Fantasy XIV\ACT国服整合\时间轴\timeline\自用万魔殿\p3s\暗黑劫火焚天分摊站位_第二次.png" AuraXIniExpression="1920" AuraYIniExpression="0" AuraWIniExpression="500" AuraHIniExpression="500" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="魔力炼成：炎暗劫火分散" Id="e954f4e9-99c5-4a3f-a9d9-03511dee61c5" RegularExpression="15:[0-9A-Fa-f]{8}:菲尼克司:66C8">
+        <Actions>
+          <Action OrderNumber="1" AuraImageMode="StretchImage" AuraName="炎暗劫火分散站位_九连环" AuraImage="${p3s图片路径}\炎暗劫火分散站位_九连环.png" AuraXIniExpression="${var:屏幕宽度}/2-500*${var:屏幕宽度}/3840" AuraYIniExpression="0" AuraWIniExpression="500*${var:屏幕宽度}/3840" AuraHIniExpression="500*${var:屏幕高度}/2160" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" AuraImageMode="StretchImage" AuraName="炎暗劫火分散站位_大圈" AuraImage="${p3s图片路径}\炎暗劫火分散站位_大圈.png" AuraXIniExpression="${var:屏幕宽度}/2" AuraYIniExpression="0" AuraWIniExpression="500*${var:屏幕宽度}/3840" AuraHIniExpression="500*${var:屏幕高度}/2160" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" AuraOp="DeactivateAura" AuraImageMode="StretchImage" AuraName="炎暗劫火分散站位_九连环" AuraImage="H:\Final Fantasy XIV\ACT国服整合\时间轴\timeline\自用万魔殿\p3s\炎暗劫火分散站位_九连环.png" AuraXIniExpression="1920-500" AuraYIniExpression="0" AuraWIniExpression="500" AuraHIniExpression="500" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura" ExecutionDelayExpression="20*1000">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="4" AuraOp="DeactivateAura" AuraImageMode="StretchImage" AuraName="炎暗劫火分散站位_大圈" AuraImage="H:\Final Fantasy XIV\ACT国服整合\时间轴\timeline\自用万魔殿\p3s\炎暗劫火分散站位_大圈.png" AuraXIniExpression="1920" AuraYIniExpression="0" AuraWIniExpression="500" AuraHIniExpression="500" AuraOIniExpression="100" AuraTTLTickExpression="20*1000-${_sincems}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Aura">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Name="设置" Id="4b74f582-f420-47d2-b087-d767a19d401b" RegularExpression="\[">
+        <Actions>
+          <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="屏幕宽度" VariableExpression="3840" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="屏幕高度" VariableExpression="2160" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" VariableOp="SetString" VariableName="p3s图片路径" VariableExpression="H:\Final Fantasy XIV\ACT国服整合\时间轴\timeline\自用万魔殿\p3s" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+        <Conditions />
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>
